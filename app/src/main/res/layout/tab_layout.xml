@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#b2b2b3"
+        />
+
+    <!-- 底部Tab导航 -->
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <!-- 首页按钮 -->
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_merchat"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dp"
+            android:text="首页"
+            android:textColor="@drawable/selector_text"
+            />
+
+        <!-- 发现按钮 -->
+        <RadioButton
+            android:id="@+id/rb_discover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_found"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dp"
+            android:text="发现"
+            android:textColor="@drawable/selector_text"
+            />
+
+
+        <!-- 新娘说按钮 -->
+        <RadioButton
+            android:id="@+id/rb_bride"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/icon_social_gray"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dp"
+            android:text="新娘说"
+            android:textColor="@drawable/selector_text"
+            />
+
+
+        <!--  工具按钮 -->
+        <RadioButton
+            android:id="@+id/rb_msg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_card"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dp"
+            android:text="工具"
+            android:textColor="@drawable/selector_text"
+            />
+
+        <!-- 我的按钮 -->
+        <RadioButton
+            android:id="@+id/rb_mime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_mine"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dp"
+            android:text="我的"
+            android:textColor="@drawable/selector_text"
+            />
+
+    </RadioGroup>
+
+</LinearLayout>
