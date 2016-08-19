@@ -11,5 +11,5 @@ import retrofit2.http.GET;
  */
 public interface JsonUtil {
     @GET(Contants.TOOL_HEAD_IMG)
-    Call<ToolEntity> getNewsData();
+    Call<ToolEntity> getToolIMG();
 }
