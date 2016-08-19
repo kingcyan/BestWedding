@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BestWedding</string>
+    <string name="Tool_Title">结婚工具</string>
+    <string name="Tool_TitleRight">分享应用</string>
 </resources>

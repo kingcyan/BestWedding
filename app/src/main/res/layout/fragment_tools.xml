@@ -3,10 +3,47 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
+    <!-- 标题 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="工的fragment"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Tool_Title"
+            android:textColor="@color/colortextchecked"
+            android:textSize="@dimen/ToolTitleSize"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/MarginRingt"
+            android:text="@string/Tool_TitleRight"
+            android:textColor="@color/colortextchecked"
+            android:textSize="@dimen/ToolTitleRightSize"
+            />
+    </RelativeLayout>
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ViewHalving"
+        android:background="@color/colortextunchecked"
         />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+        <ImageView
+            android:id="@+id/tool_head_img"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            />
+    </RelativeLayout>
+
 </LinearLayout>
