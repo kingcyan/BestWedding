@@ -30,4 +30,6 @@ public class MyApplication extends Application{
         /**得到刚刚写的方法*/
         return retrofit.create(JsonUtil.class);
     }
+
+
 }
