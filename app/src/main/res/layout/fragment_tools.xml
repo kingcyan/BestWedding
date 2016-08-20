@@ -1,49 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
     <!-- 标题 -->
-    <RelativeLayout
-        android:layout_width="match_parent"
+
+
+    <TextView
+        android:id="@+id/tool_title"
+        android:layout_width="wrap_content"
         android:layout_height="?attr/actionBarSize"
-        >
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/Tool_Title"
+        android:textColor="@color/colortextchecked"
+        android:textSize="@dimen/ToolTitleSize"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/Tool_Title"
-            android:textColor="@color/colortextchecked"
-            android:textSize="@dimen/ToolTitleSize"
-            />
+    <TextView
+        android:id="@+id/tool_tv_share"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/MarginRingt"
+        android:gravity="center"
+        android:text="@string/Tool_TitleRight"
+        android:textColor="@color/colortextchecked"
+        android:textSize="@dimen/ToolTitleRightSize"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/MarginRingt"
-            android:text="@string/Tool_TitleRight"
-            android:textColor="@color/colortextchecked"
-            android:textSize="@dimen/ToolTitleRightSize"
-            />
-    </RelativeLayout>
     <!--分割线-->
     <View
+        android:id="@+id/view_divider"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ViewHalving"
+        android:layout_below="@+id/tool_tv_share"
         android:background="@color/colortextunchecked"
         />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="230dp">
-        <ImageView
-            android:id="@+id/tool_head_img"
-            android:clickable="true"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            />
-    </RelativeLayout>
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/tool_head_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ToolImageHeightmin"
+        android:layout_below="@id/view_divider"
+        android:clickable="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ToolImageHeight"
+        android:layout_below="@id/tool_head_img"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/ImageML"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_wedding_card"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
