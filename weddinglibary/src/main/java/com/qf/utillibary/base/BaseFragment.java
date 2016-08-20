@@ -30,6 +30,15 @@ public abstract class BaseFragment extends Fragment{
         loadDatas();
     }
 
+    /**
+     * 查找页面布局ID所对应的控件对象，不用强制转换
+     * @param resId
+     * @param <T>
+     * @return
+     */
+    protected <T> T findViewByIds(int resId,View view){
+        return (T) view.findViewById(resId);
+    }
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);

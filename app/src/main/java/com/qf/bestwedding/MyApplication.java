@@ -14,7 +14,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class MyApplication extends Application{
     public static JsonUtil utils;
-
     @Override
     public void onCreate() {
         super.onCreate();

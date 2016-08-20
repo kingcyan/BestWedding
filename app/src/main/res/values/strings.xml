@@ -1,11 +1,23 @@
 <resources>
-    <string name="app_name">BestWedding</string>
+    <string name="app_name">婚礼纪</string>
 
-    <!---->
+    <!--工具页面-->
     <string name="Tool_Title">结婚工具</string>
     <string name="Tool_TitleRight">分享应用</string>
     <string name="Tool_TitleFree">海量免费模板</string>
     <string name="Tool_TitlePlan">结婚任务</string>
     <string name="Tool_TitleInvitation">电子请帖</string>
     <string name="Tool_TitleStudy">3分钟学会备婚</string>
+    <string name="Tool_budget">结婚预算</string>
+    <string name="Tool_process">结婚当日流程</string>
+    <string name="Tool_wechat">微信墙</string>
+    <string name="Tool_seat">排座位</string>
+    <string name="Tool_lucky_day">结婚吉日</string>
+    <string name="Tool_registry">结婚登记处</string>
+    <string name="Tool_story">结婚故事</string>
+    <string name="Tool_amounts">礼金记账本</string>
+
+    <!--工具跳转婚礼纪页面-->
+    <string name="Headbtn">立即体验</string>
+    <string name="Headinvitation">电子请帖</string>
 </resources>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_below="@id/Img"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_marginTop="-10dp"
+            android:id="@+id/budget"
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/IMG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/icon_budget"
+                />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/icon_budget_new"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/Tool_budget"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/plan"
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/IMG1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_wedding_plan"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/IMG1"
+                android:gravity="center"
+                android:text="@string/Tool_process"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wechat"
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/IMG2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_wedding_wall"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/IMG2"
+                android:gravity="center"
+                android:text="@string/Tool_wechat"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/seat"
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/IMG3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_wedding_seat"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/IMG3"
+                android:gravity="center"
+                android:text="@string/Tool_seat"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/luckly_day"
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/IMG4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_wedding_calendar"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/IMG4"
+                android:gravity="center"
+                android:text="@string/Tool_lucky_day"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/regist"
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/IMG5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_wedding_register"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/IMG5"
+                android:gravity="center"
+                android:text="@string/Tool_registry"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/story"
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/IMG6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_wedding_story"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/IMG6"
+                android:gravity="center"
+                android:text="@string/Tool_story"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/amounts"
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/IMG7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_wedding_account"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/IMG7"
+                android:gravity="center"
+                android:text="@string/Tool_amounts"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>

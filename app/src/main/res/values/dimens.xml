@@ -8,7 +8,7 @@
     <dimen name="ToolTitleRightSize">14sp</dimen>
     <dimen name="MarginRingt">5dp</dimen>
     <dimen name="ViewHalving">0.5dp</dimen>
-    <dimen name="ToolImageHeightmin">150dp</dimen>
+    <dimen name="ToolImageHeightmin">130dp</dimen>
     <dimen name="ToolImageHeight">80dp</dimen>
     <dimen name="ImageML">20dp</dimen>
 </resources>

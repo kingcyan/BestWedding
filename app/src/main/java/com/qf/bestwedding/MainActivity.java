@@ -13,7 +13,6 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
 
 
     RadioGroup rgTab;
-
     @Override
     public int getContentViewId() {
         return R.layout.activity_main;
@@ -61,6 +60,5 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
                 break;
         }
     }
-
 
 }
