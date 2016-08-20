@@ -56,19 +56,66 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
+            <ImageView
+                android:id="@+id/Weddingplan"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/ImageML"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_wedding_task"
+                />
+            <TextView
+                android:layout_marginLeft="@dimen/MarginRingt"
+                android:layout_alignTop="@+id/Weddingplan"
+                android:layout_toRightOf="@+id/Weddingplan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/MarginRingt"
+                android:text="@string/Tool_TitlePlan"
+                />
 
+            <TextView
+                android:textColor="@color/colortextunchecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Tool_TitleStudy"
+                android:layout_toRightOf="@id/Weddingplan"
+                android:layout_marginBottom="@dimen/MarginRingt"
+                android:layout_alignBottom="@id/Weddingplan"
+                />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
             <ImageView
+                android:id="@+id/Invitation"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="@dimen/ImageML"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:src="@drawable/icon_wedding_card"
+                />
+            <TextView
+                android:layout_marginLeft="@dimen/MarginRingt"
+                android:layout_alignTop="@+id/Invitation"
+                android:layout_toRightOf="@+id/Invitation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/MarginRingt"
+                android:text="@string/Tool_TitleInvitation"
+                />
+
+            <TextView
+                android:textColor="@color/colortextunchecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Tool_TitleFree"
+                android:layout_toRightOf="@id/Invitation"
+                android:layout_marginBottom="@dimen/MarginRingt"
+                android:layout_alignBottom="@id/Invitation"
                 />
         </RelativeLayout>
     </LinearLayout>

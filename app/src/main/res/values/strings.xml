@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">BestWedding</string>
+
+    <!---->
     <string name="Tool_Title">结婚工具</string>
     <string name="Tool_TitleRight">分享应用</string>
+    <string name="Tool_TitleFree">海量免费模板</string>
+    <string name="Tool_TitlePlan">结婚任务</string>
+    <string name="Tool_TitleInvitation">电子请帖</string>
+    <string name="Tool_TitleStudy">3分钟学会备婚</string>
 </resources>
