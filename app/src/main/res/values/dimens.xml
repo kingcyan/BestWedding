@@ -24,6 +24,8 @@
     <dimen name="home_it2_bottom2_imghight">90dp</dimen>
     <dimen name="home_it2_home_text4_padingleft">5dp</dimen>
     <dimen name="home_it2_home_text4_padingRight">20dp</dimen>
+    <!--city城市选择页-->
+    <dimen name="city_editTextsize">14dp</dimen>
 
 
 

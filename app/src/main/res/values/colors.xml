@@ -11,6 +11,7 @@
         <!--head1   editText-->
 
         <color name="colorEditText">#9a9aa7</color>
+    <color name="city_background">#ADADAD</color>
 
 
 

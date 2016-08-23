@@ -1,5 +1,6 @@
 package com.qf.util;
 
+import com.qf.entity.CityEntity;
 import com.qf.entity.HomeAllEntity;
 import com.qf.entity.HomeHeadEntity;
 import com.qf.entity.BrideEntity;
@@ -16,6 +17,9 @@ public interface JsonUtil {
 
     //首页
     //首页头部图片
+    @GET(Contants.HOME_CITY_SELECT)
+    Call<CityEntity> getCityEntity();
+
     @GET(Contants.HOME_HEAD_IMG)
     Call<HomeHeadEntity> getHomeHeadIMG();
 

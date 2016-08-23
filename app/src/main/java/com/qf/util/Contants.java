@@ -7,14 +7,15 @@ package com.qf.util;
 public interface Contants {
 
     //BaseUrl
-    String HTTP_ROOT   = "http://www.hunliji.com/";
-
     String HTTP_ROOT = "http://www.hunliji.com/";
 
     //首页
     // 顶部图片
     String HTTP_HOME_ROOT = "http://2.mshouban.applinzi.com/";
     String HOME_HEAD_IMG = "bejson/fetchJSON.php?u=http%3A%2F%2Fwww.hunliji.com%2Fp%2Fwedding%2Findex.php%2Fhome%2FAPIPosterBlock%2Fblock_info%3Fid%3D1001%26app_version%3D6.8.7%26city%3D0%0A&_=1471513881375";
+
+    //城市选择页
+    String HOME_CITY_SELECT = "http://www.hunliji.com/p/wedding/index.php/home/APICity/cities?relative_id=264";
 
     //首页全部
     //问顾问
