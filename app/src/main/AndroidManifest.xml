@@ -19,6 +19,7 @@
         </activity>
         <activity android:name="com.qf.flag.toolsfragment.HeadWedding"/>
         <activity android:name="com.qf.flag.toolsfragment.InvitationActivity"/>
+        <activity android:name="com.qf.flag.discoverfragment.JumpAactivity"/>
     </application>
 
 </manifest>

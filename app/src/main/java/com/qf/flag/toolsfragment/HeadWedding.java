@@ -44,8 +44,8 @@ public class HeadWedding extends BaseActivity implements View.OnClickListener {
         tv_btn.setOnClickListener(this);
 
         //获取Intent传来的Web页面URL并设置给webview
+        webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl(getIntent().getStringExtra("URL"));
-
     }
 
 

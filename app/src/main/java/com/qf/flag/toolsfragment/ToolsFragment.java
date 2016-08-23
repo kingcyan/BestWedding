@@ -126,6 +126,8 @@ public class ToolsFragment extends BaseFragment implements View.OnClickListener 
             case R.id.tool_right:
                 //跳转到电子请帖
                 Toast.makeText(getActivity(), "点击了电子请帖", Toast.LENGTH_SHORT).show();
+                Intent in = new Intent(getActivity(), InvitationActivity.class);
+                startActivity(in);
                 break;
             case R.id.tool_head_img:
                 //点击了头部图片
@@ -133,6 +135,10 @@ public class ToolsFragment extends BaseFragment implements View.OnClickListener 
                 Intent intent = new Intent(getActivity(),HeadWedding.class);
                 intent.putExtra("URL",mURL);
                 startActivity(intent);
+//                WebView webView = new WebView(getActivity());
+//                webView.loadUrl(mURL);
+//                webView.getSettings().setJavaScriptEnabled(true);
+//                getActivity().setContentView(webView);
                 break;
         }
     }

@@ -4,6 +4,7 @@ import com.qf.bestwedding.R;
 import com.qf.utillibary.base.BaseActivity;
 
 /**
+ * 电子请帖页面
  * Created by King
  * 2016/8/20
  */

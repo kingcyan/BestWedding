@@ -20,4 +20,7 @@
     <!--工具跳转婚礼纪页面-->
     <string name="Headbtn">立即体验</string>
     <string name="Headinvitation">电子请帖</string>
+
+    <!--jump页面-->
+    <string name="jumptitle">0元试用</string>
 </resources>
