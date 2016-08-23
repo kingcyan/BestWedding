@@ -5,4 +5,13 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colortextchecked">#ff9c86</color>
     <color name="colortextunchecked">#ADADAD</color>
+
+    <!--首页head-->
+
+        <!--head1   editText-->
+
+        <color name="colorEditText">#9a9aa7</color>
+
+
+
 </resources>

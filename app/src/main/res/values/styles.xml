@@ -15,4 +15,16 @@
         <item name="windowActionBar">false</item>
     </style>
 
+
+    <style name="Anim_fade" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/fade</item>
+    </style>
+
+    <style name="fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/city_approach_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/city_approach_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/city_approach_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/city_approach_out</item>
+    </style>
+
 </resources>

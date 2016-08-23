@@ -1,7 +1,5 @@
 <resources>
-    <string name="app_name">婚礼纪</string>
-
-    <!--工具页面-->
+    <string name="app_name">BestWedding</string>
     <string name="Tool_Title">结婚工具</string>
     <string name="Tool_TitleRight">分享应用</string>
     <string name="Tool_TitleFree">海量免费模板</string>
@@ -20,4 +18,35 @@
     <!--工具跳转婚礼纪页面-->
     <string name="Headbtn">立即体验</string>
     <string name="Headinvitation">电子请帖</string>
+
+
+<!--home-->
+
+    <!--home    head-->
+    <string name="head1">全国</string>
+    <string name="head1_editText">搜索商家.套餐.话题</string>
+    <string name="item2_home_text4">回复</string>
+    
+    <!--home    city-->
+    <string name="city_edithint">搜索你所选择的城市</string>
+    <string name="city_text1">当前所在</string>
+    <string name="city_text2">国内热门城市</string>
+    <string name="city_text2_text1">杭州</string>
+    <string name="city_text2_text2">北京</string>
+    <string name="city_text2_text3">上海</string>
+    <string name="city_text2_text4">深圳</string>
+    <string name="city_text2_text5">西安</string>
+    <string name="city_text2_text6">成都</string>
+    <string name="city_text2_text7">广州</string>
+    <string name="city_text2_text8">武汉</string>
+    <string name="city_text2_text9">南京</string>
+    <string name="city_text2_text10">重庆</string>
+    <string name="city_text2_text11">苏州</string>
+    <string name="city_text2_text12">天津</string>
+    <string name="city_text2_text13">厦门</string>
+    <string name="city_text2_text14">三亚</string>
+    <string name="city_text2_text15">长沙</string>
+    <string name="city_text2_text16">郑州</string>
+
+
 </resources>

@@ -11,4 +11,19 @@
     <dimen name="ToolImageHeightmin">130dp</dimen>
     <dimen name="ToolImageHeight">80dp</dimen>
     <dimen name="ImageML">20dp</dimen>
+
+    <!--首页-->
+    <dimen name="home_hand1_text">14sp</dimen>
+    <dimen name="home_hand2_img">60dp</dimen>
+
+    <dimen name="home_it1_head1">20sp</dimen>
+    <dimen name="home_it1_head2">14sp</dimen>
+    <dimen name="home_it1_bottom1">16sp</dimen>
+    <dimen name="home_it1_bottom1_pading">7dp</dimen>
+
+    <dimen name="home_it2_bottom2_imghight">90dp</dimen>
+    <dimen name="home_it2_home_text4_padingleft">5dp</dimen>
+    <dimen name="home_it2_home_text4_padingRight">20dp</dimen>
+
+
 </resources>
