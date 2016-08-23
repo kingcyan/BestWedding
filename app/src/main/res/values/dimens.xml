@@ -26,4 +26,10 @@
     <dimen name="home_it2_home_text4_padingRight">20dp</dimen>
 
 
+
+    <!--新娘说页面-->
+    <dimen name="BrideTitle">14sp</dimen>
+    <dimen name="BrideMargin">10dp</dimen>
+    <dimen name="IMGheight">120dp</dimen>
+
 </resources>

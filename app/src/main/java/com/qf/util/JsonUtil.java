@@ -2,6 +2,7 @@ package com.qf.util;
 
 import com.qf.entity.HomeAllEntity;
 import com.qf.entity.HomeHeadEntity;
+import com.qf.entity.BrideEntity;
 import com.qf.entity.ToolEntity;
 
 import retrofit2.Call;
@@ -55,4 +56,7 @@ public interface JsonUtil {
     Call<ToolEntity> getToolIMG();
 
 
+
+    @GET(Contants.BRIDE_URL)
+    Call<BrideEntity> getBrideUrl();
 }

@@ -13,3 +13,4 @@ public class InvitationActivity extends BaseActivity{
         return R.layout.activity_invition;
     }
 }
+
