@@ -8,10 +8,15 @@
 
     <!--首页head-->
 
-        <!--head1   editText-->
+    <!--head1   editText-->
 
-        <color name="colorEditText">#9a9aa7</color>
+    <color name="colorEditText">#9a9aa7</color>
     <color name="city_background">#ADADAD</color>
+
+
+    <!--公共-->
+    <color name="financial_backgrand">#e6e3e3</color>
+
 
 
 
