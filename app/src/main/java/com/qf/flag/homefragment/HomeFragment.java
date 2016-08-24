@@ -6,6 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 import com.qf.adapter.HomeAllAdapter;
 import com.qf.bestwedding.CitySelectActivity;
+import com.qf.bestwedding.FinancialActivity;
 import com.qf.bestwedding.R;
 import com.qf.util.Contants;
 import com.qf.utillibary.base.BaseFragment;
@@ -151,6 +153,20 @@ public class HomeFragment extends BaseFragment {
 
                 //设置webview可支持js脚本
                 settings.setJavaScriptEnabled(true);
+                //设置超链接能响应
+                webView.setWebViewClient(new WebViewClient() {
+                    /**
+                     * 重定向
+                     * @param view
+                     * @param url
+                     * @return
+                     */
+                    @Override
+                    public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                        view.loadUrl(url);  //将该url重定向到app里面，这样就不再是去浏览器中打开该网页了
+                        return super.shouldOverrideUrlLoading(view, url);
+                    }
+                });
                 break;
             case R.id.head3_img1:
                 Toast.makeText(getActivity(), "img1", Toast.LENGTH_SHORT).show();
@@ -163,12 +179,34 @@ public class HomeFragment extends BaseFragment {
                 break;
             case R.id.head3_img4:
                 Toast.makeText(getActivity(), "img4", Toast.LENGTH_SHORT).show();
+                WebView webView_img4 = new WebView(getContext());
+                getActivity().setContentView(webView_img4);
+                webView_img4.loadUrl(Contants.GLOBAL_TRAVEL);
+                WebSettings settings_img4 = webView_img4.getSettings();
+
+                //设置webview可支持js脚本
+                settings_img4.setJavaScriptEnabled(true);
+                //设置超链接能响应
+                webView_img4.setWebViewClient(new WebViewClient() {
+                    /**
+                     * 重定向
+                     * @param view
+                     * @param url
+                     * @return
+                     */
+                    @Override
+                    public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                        view.loadUrl(url);  //将该url重定向到app里面，这样就不再是去浏览器中打开该网页了
+                        return super.shouldOverrideUrlLoading(view, url);
+                    }
+                });
                 break;
             case R.id.head3_img5:
                 Toast.makeText(getActivity(), "img5", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.head3_bigImg1:
                 Toast.makeText(getActivity(), "bigimg1", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), FinancialActivity.class));
                 break;
             case R.id.head3_bigImg2:
                 Toast.makeText(getActivity(), "bigimg2", Toast.LENGTH_SHORT).show();
@@ -185,6 +223,21 @@ public class HomeFragment extends BaseFragment {
 
                 //设置webview可支持js脚本
                 settings1.setJavaScriptEnabled(true);
+                //设置超链接能响应
+                webView1.setWebViewClient(new WebViewClient() {
+                    /**
+                     * 重定向
+                     * @param view
+                     * @param url
+                     * @return
+                     */
+                    @Override
+                    public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                        view.loadUrl(url);  //将该url重定向到app里面，这样就不再是去浏览器中打开该网页了
+                        return super.shouldOverrideUrlLoading(view, url);
+                    }
+                });
+
                 break;
             case R.id.ll_jia:
                 Toast.makeText(getActivity(), "嘉", Toast.LENGTH_SHORT).show();

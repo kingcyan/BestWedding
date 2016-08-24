@@ -23,6 +23,9 @@
 
         <!--城市选择页面-->
         <activity android:name=".CitySelectActivity"/>
+
+        <!--金融超市-->
+        <activity android:name=".FinancialActivity"/>
     </application>
 
 </manifest>

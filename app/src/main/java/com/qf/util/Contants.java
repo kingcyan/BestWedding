@@ -21,9 +21,16 @@ public interface Contants {
     //问顾问
     String Ask_Consultant = "http://www.hunliji.com/p/wedding/index.php/home/Activities/ShowIndex/id/183&is_app=true?\n" +
             "city=190&user_id=3505598&appver=6.8.7";
-
+    //全球旅拍
+    String GLOBAL_TRAVEL = "http://www.hunliji.com/p/wedding/Public/wap/activity/travelChannel.html?id=15&cid=190";
     //嘉年华主会场
     String ASSEMBLY_ROOM = "http://www.hunliji.com/p/wedding/Tpl/default/home/20160825_main.html?is_app=true&city=190&user_id=3505598&appver=6.8.7";
+
+    //金融超市1     两张图片
+    String FINANCIAL1 = "p/wedding/index.php/home/APIPosterBlock/block_info?\n" +
+            "city=190&id=1006&app_version=6.8.7&requestStartDate=11:51:01";
+    //金融超市2     六张图片
+    String FINANCIAL2 = "p/wedding/index.php/home/APIFinancialMarket/listV2?requestStartDate=11:51:01";
 
     String HOME_ALL = "p/wedding/index.php/home/APIFrontPageFeed/index?cid=0&per_page=20&last_time=1471684710&page=1&property_id=";
     //首页    婚礼策划

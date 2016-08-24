@@ -1,6 +1,8 @@
 package com.qf.util;
 
 import com.qf.entity.CityEntity;
+import com.qf.entity.FinancialEntity1;
+import com.qf.entity.FinancialEntity2;
 import com.qf.entity.HomeAllEntity;
 import com.qf.entity.HomeHeadEntity;
 import com.qf.entity.BrideEntity;
@@ -20,12 +22,21 @@ public interface JsonUtil {
     @GET(Contants.HOME_CITY_SELECT)
     Call<CityEntity> getCityEntity();
 
-    @GET(Contants.HOME_HEAD_IMG)
-    Call<HomeHeadEntity> getHomeHeadIMG();
+    //金融超市1
+    @GET(Contants.FINANCIAL1)
+    Call<FinancialEntity1> getFinancial1();
+
+    //金融超市2
+    @GET(Contants.FINANCIAL2)
+    Call<FinancialEntity2> getFinancial2();
 
     //首页Fragment全部
     @GET(Contants.HOME_ALL)
     Call<HomeAllEntity> getHomeAllData();        //首页Fragment全部
+
+    //金融超市2
+    @GET(Contants.HOME_HEAD_IMG)
+    Call<HomeHeadEntity> getHomeHeadIMG();
 
     //首页    婚礼策划
     @GET(Contants.HOME_WEDDING_PLANNER)
