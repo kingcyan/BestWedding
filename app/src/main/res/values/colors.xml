@@ -13,6 +13,9 @@
     <color name="colorEditText">#9a9aa7</color>
     <color name="city_background">#ADADAD</color>
 
+    <!--城市选择-->
+    <color name="color_chengshi_button">#a5d6ec</color>
+    <color name="color_white">#fff</color>    <!--白色-->
 
     <!--公共-->
     <color name="financial_backgrand">#e6e3e3</color>
