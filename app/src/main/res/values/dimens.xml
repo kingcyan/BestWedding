@@ -17,4 +17,29 @@
     <dimen name="BrideMargin">10dp</dimen>
     <dimen name="IMGheight">120dp</dimen>
 
+
+    <!--我的页面-->
+    <dimen name="mine_titl_textSize">20sp</dimen>
+    <dimen name="view_line_height">0.5dp</dimen>
+    <dimen name="view_more_height">10dp</dimen>
+    <dimen name="view_more_bottom_height">70dp</dimen>
+
+    <dimen name="relative_title_height">46dp</dimen>
+    <dimen name="mine_user_height">70dp</dimen>
+    <dimen name="relative_titleName_textSize">16sp</dimen>
+    <dimen name="relative_rightSummy_textSize">13sp</dimen>
+    <dimen name="textSize_summy12">12sp</dimen>
+    <dimen name="textSize_width_rate">0dp</dimen>
+
+    <dimen name="relative_left_drawablePadding">10dp</dimen>
+    <dimen name="relative_right_drawablePadding">5dp</dimen>
+    <dimen name="relative_top_drawablePadding">10dp</dimen>
+    <dimen name="relative_title_marginleft">20dp</dimen>
+    <dimen name="relative_title_marginright">20dp</dimen>
+    <dimen name="mine_img_marginleft">20dp</dimen>
+    <dimen name="mine_img_marginright">10dp</dimen>
+    <dimen name="mine_text_margin15">15dp</dimen>
+    <dimen name="mine_text_margin5">5dp</dimen>
+
+
 </resources>

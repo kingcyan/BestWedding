@@ -22,5 +22,32 @@
     <string name="Headinvitation">电子请帖</string>
 
     <!--jump页面-->
-    <string name="jumptitle">0元试用</string>
+    <string name="jumptitle">0元试用</string>  <!--我的页面-->
+    <string name="mine_titlebar_name">我的</string>
+    <string name="mine_user_name">用户名</string>
+    <string name="mine_marryDate">婚期:</string>
+    <string name="mine_dateXX">201X-XX-XX</string>
+
+    <string name="mine_appointment">我的预约</string>
+    <string name="mine_order">我的订单</string>
+    <string name="mine_buyerCar">购物车</string>
+    <string name="mine_sign">签到</string>
+    <string name="mine_money_name">钱包</string>
+    <string name="mine_money_right">红包、兑换码</string>
+    <string name="mine_financial_name">金融</string>
+    <string name="mine_financial_right">分期、贷款、办卡</string>
+    <string name="mine_collect_name">收藏</string>
+    <string name="mine_collect_right">收藏的套餐、案例、商品和专题</string>
+    <string name="mine_focus_name">关注</string>
+    <string name="mine_focus_right">关注的标签、商家和用户</string>
+    <string name="mine_topic_name">话题</string>
+    <string name="mine_topic_right">发布和收藏的话题</string>
+    <string name="mine_activity_name">活动</string>
+    <string name="mine_activity_right">0元活动</string>
+    <string name="mine_imMerchant_name">我是商家</string>
+    <string name="mine_imMerchant_right">免费入驻</string>
+    <string name="mine_contactService_name">联系客服</string>
+    <string name="mine_contactService_right"></string>
+
+
 </resources>
