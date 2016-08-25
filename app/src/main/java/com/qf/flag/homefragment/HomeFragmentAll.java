@@ -48,10 +48,10 @@ public class HomeFragmentAll extends BaseFragment {
     protected void init(View view) {
         ButterKnife.bind(getActivity(), view);
         listview = (ListView) view.findViewById(R.id.home_fgm_listview);
-    //    listview.addHeaderView(LayoutInflater.from(getContext()).inflate(R.layout.fragment_home_head, null));
+       // listview.addHeaderView(LayoutInflater.from(getContext()).inflate(R.layout.fragment_home_head, null));
         adapter1 = new HomeAdapter1(getActivity());
         listview.setAdapter(adapter1);
-        aa(listview);
+     //   aa(listview);
     }
 
     @Override
@@ -103,11 +103,11 @@ public class HomeFragmentAll extends BaseFragment {
     }
 
 
-    public void aa(ListView listViews){
-       int a =  listViews.getCount()*9/10;
-        int h =  getActivity().getWindowManager().getDefaultDisplay().getHeight()*a;
-        ViewGroup.LayoutParams layoutParams = listview.getLayoutParams();
-        layoutParams.height = h;
-        listview.setLayoutParams(layoutParams);
-    }
+//    public void aa(ListView listViews){
+//       int a =  listViews.getCount()*9/10;
+//        int h =  getActivity().getWindowManager().getDefaultDisplay().getHeight()*a;
+//        ViewGroup.LayoutParams layoutParams = listview.getLayoutParams();
+//        layoutParams.height = h;
+//        listview.setLayoutParams(layoutParams);
+//    }
 }
