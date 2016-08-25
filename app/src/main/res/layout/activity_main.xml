@@ -15,6 +15,7 @@
 
     <!-- 底部tab导航 -->
     <include
+
         android:id="@+id/tab"
         android:layout_gravity="bottom"
         android:layout_width="match_parent"

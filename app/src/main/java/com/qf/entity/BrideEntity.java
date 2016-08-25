@@ -235,7 +235,7 @@ public class BrideEntity {
                      * mediable_id : 2685899
                      */
 
-                    private List<PicsBean> pics;
+                    private List<media_itemsBean> pics;
 
                     public String getMessage() {
                         return message;
@@ -245,15 +245,15 @@ public class BrideEntity {
                         this.message = message;
                     }
 
-                    public List<PicsBean> getPics() {
+                    public List<media_itemsBean> getPics() {
                         return pics;
                     }
 
-                    public void setPics(List<PicsBean> pics) {
+                    public void setPics(List<media_itemsBean> pics) {
                         this.pics = pics;
                     }
 
-                    public static class PicsBean {
+                    public static class media_itemsBean {
                         private String path;
 
                         public String getPath() {
@@ -290,6 +290,25 @@ public class BrideEntity {
                 public static class CommunityChannelBean {
                     private int fans_count;
 
+                    private String title;
+                    private String cover_path;
+
+                    public String getTitle() {
+                        return title;
+                    }
+
+                    public void setTitle(String title) {
+                        this.title = title;
+                    }
+
+                    public String getCover_path() {
+                        return cover_path;
+                    }
+
+                    public void setCover_path(String cover_path) {
+                        this.cover_path = cover_path;
+                    }
+
                     public int getFans_count() {
                         return fans_count;
                     }
@@ -299,7 +318,7 @@ public class BrideEntity {
                     }
                 }
 
-                public static class PagesBean{
+                public static class PagesBean {
                     private String img_path;
                     private String join_count;
 

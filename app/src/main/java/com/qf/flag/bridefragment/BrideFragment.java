@@ -1,10 +1,11 @@
 package com.qf.flag.bridefragment;
 
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 
+import com.mylhyl.crlayout.SwipeRefreshAdapterView;
+import com.mylhyl.crlayout.SwipeRefreshRecyclerView;
 import com.qf.bestwedding.MyApplication;
 import com.qf.bestwedding.R;
 import com.qf.entity.BrideEntity;
@@ -21,15 +22,19 @@ import retrofit2.Response;
  * Created by King
  * 2016/8/19
  */
-public class BrideFragment extends BaseFragment{
+public class BrideFragment extends BaseFragment implements SwipeRefreshAdapterView.OnListLoadListener, SwipeRefreshLayout.OnRefreshListener {
 
-   private  List<BrideEntity.DataBean.ListBean> datas;
-    private RecyclerView recyclerView;
+    public static final int MID = 0;
+    private SwipeRefreshRecyclerView recyclerView;
+    private  List<BrideEntity.DataBean.ListBean> datas;
     private BrideAdapter adapter;
+    int page = 1;
     @Override
     protected int getContentView() {
         return R.layout.fragment_bride;
     }
+
+
 
     /**
      *  初始化方法
@@ -38,26 +43,37 @@ public class BrideFragment extends BaseFragment{
     @Override
     protected void init(View view) {
 
+
         datas = new ArrayList<>();
-        recyclerView = findViewByIds(R.id.Brideview,view);
+        recyclerView = findViewByIds(R.id.swipeRefresh,view);
 
         adapter = new BrideAdapter(datas,getActivity());
         recyclerView.setAdapter(adapter);
+
+        getDatas();
 
         LinearLayoutManager manager = new LinearLayoutManager(getActivity());
         manager.setOrientation(LinearLayoutManager.VERTICAL);
 
         recyclerView.setLayoutManager(manager);
 
-        Call<BrideEntity> call =  MyApplication.utils.getBrideUrl();
+
+        recyclerView.setOnListLoadListener(this);
+        recyclerView.setOnRefreshListener(this);
+
+
+    }
+
+
+    private void getDatas() {
+        Call<BrideEntity> call =  MyApplication.utils.getBrideUrl(MID,page);
         call.enqueue(new Callback<BrideEntity>() {
             @Override
             public void onResponse(Call<BrideEntity> call, Response<BrideEntity> response) {
-               List<BrideEntity.DataBean.ListBean> data= response.body().getData().getList();
-                Log.e("TAG", "onResponse: "+response.body().getData().toString() );
-
+                List<BrideEntity.DataBean.ListBean> data= response.body().getData().getList();
+                datas.clear();
                 datas.addAll(data);
-                recyclerView.getAdapter().notifyDataSetChanged();
+                adapter.notifyDataSetChanged();
             }
 
             @Override
@@ -65,5 +81,20 @@ public class BrideFragment extends BaseFragment{
 
             }
         });
+    }
+
+
+    @Override
+    public void onListLoad() {
+        page++;
+        getDatas();
+        recyclerView.setLoading(false);
+    }
+
+    @Override
+    public void onRefresh() {
+        page=1;
+        getDatas();
+        recyclerView.setRefreshing(false);
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
+              android:layout_height="wrap_content"
               android:orientation="vertical">
     <!--标题-->
     <LinearLayout
@@ -21,6 +21,7 @@
             />
 
         <TextView
+            android:textColor="#000"
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,14 +44,14 @@
         android:ellipsize="end"
         android:maxLines="2"
         android:text="这是内容"
-        android:textSize="16sp"
+        android:textSize="14sp"
         />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="10dp"
-        android:background="#00f"/>
+        android:background="#d4d4d6"/>
     <!--评论点赞等-->
     <RelativeLayout
         android:layout_width="match_parent"
@@ -67,7 +68,7 @@
             android:src="@mipmap/ic_launcher"/>
         <!--id-->
         <TextView
-
+            android:textColor="@color/colortextchecked"
             android:id="@+id/idName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -89,7 +90,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@drawable/icon_comment_g_s"/>
             <!--评论条数-->
             <TextView
                 android:textColor="#a3a2a2"
@@ -120,7 +121,7 @@
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
                 android:layout_toLeftOf="@+id/Good"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@drawable/ic_thumbup_gray2"/>
             <!--点赞条数-->
             <TextView
                 android:textColor="#a3a2a2"
