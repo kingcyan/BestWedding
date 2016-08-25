@@ -182,6 +182,7 @@ public class HomeFragment extends BaseFragment {
                 break;
             case R.id.head3_img4:
                 Toast.makeText(getActivity(), "img4", Toast.LENGTH_SHORT).show();
+                getActivity().setContentView(webView);
                 webView.loadUrl(Contants.GLOBAL_TRAVEL);
                 break;
             case R.id.head3_img5:
