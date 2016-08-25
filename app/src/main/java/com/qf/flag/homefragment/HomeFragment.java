@@ -229,6 +229,5 @@ public class HomeFragment extends BaseFragment {
             homeHeadText1.setText(head_city.getName());
         }
         super.onActivityResult(requestCode, resultCode, data);
-
     }
 }

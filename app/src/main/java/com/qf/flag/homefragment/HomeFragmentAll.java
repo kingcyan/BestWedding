@@ -6,8 +6,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.qf.adapter.HomeAdapter1;
 import com.qf.bestwedding.MyApplication;
@@ -26,7 +28,7 @@ import retrofit2.Response;
  * Created by Administrator on 2016/8/20 0020. on 15:49
  * xiaohl_902
  */
-public class HomeFragmentAll extends BaseFragment {
+public class HomeFragmentAll extends BaseFragment implements AdapterView.OnItemClickListener {
 
     //数据源
     private List<HomeAllEntity.DataBean.ListBean> list;
@@ -51,6 +53,7 @@ public class HomeFragmentAll extends BaseFragment {
        // listview.addHeaderView(LayoutInflater.from(getContext()).inflate(R.layout.fragment_home_head, null));
         adapter1 = new HomeAdapter1(getActivity());
         listview.setAdapter(adapter1);
+        listview.setOnItemClickListener(this);
      //   aa(listview);
     }
 
@@ -100,6 +103,12 @@ public class HomeFragmentAll extends BaseFragment {
 
             }
         });
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        HomeAllEntity.DataBean.ListBean listBean = (HomeAllEntity.DataBean.ListBean) adapter1.getItem(position);
+        Toast.makeText(getActivity(), listBean.getEntity().getMerchant().getName(), Toast.LENGTH_SHORT).show();
     }
 
 

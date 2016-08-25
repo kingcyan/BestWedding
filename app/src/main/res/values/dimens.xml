@@ -14,7 +14,8 @@
 
     <!--首页-->
     <dimen name="home_hand1_text">14sp</dimen>
-    <dimen name="home_hand2_img">60dp</dimen>
+    <dimen name="home_hand2_img">80dp</dimen>
+    <dimen name="home_hand2_bigImg_height">65dp</dimen>
 
     <dimen name="home_it1_head1">20sp</dimen>
     <dimen name="home_it1_head2">14sp</dimen>
