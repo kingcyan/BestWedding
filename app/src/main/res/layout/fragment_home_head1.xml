@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <!--全国-->
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/home_citySelect"
+        android:padding="5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/home_head_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/head1"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/home_hand1_text" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:src="@drawable/res_ics_triangle_down_red" />
+    </LinearLayout>
+
+    <!--与发现Fragment公共部分-->
+    <include
+        layout="@layout/fragment_home_commonality"/>
+
+
+</LinearLayout>

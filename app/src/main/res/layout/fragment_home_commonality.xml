@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/edit_style">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:paddingLeft="6dp"
+            android:src="@drawable/icon_nav_search" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/head1_editText"
+            android:textColor="@color/colorEditText"
+            android:textSize="@dimen/home_hand1_text" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_margin="3dp"
+        android:layout_width="16dp"
+        android:layout_height="25dp"
+        android:clickable="true"
+        android:src="@drawable/icon_notice_red" />
+
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:padding="4dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:clickable="true"
+        android:src="@drawable/icon_product_cart_r" />
+
+</LinearLayout>

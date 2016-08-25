@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/fragment_home_head"/>
+
+    <HorizontalScrollView
+        android:background="#00f"
+        android:id="@+id/home_bottom_scrView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_bottom_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="10000dp">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

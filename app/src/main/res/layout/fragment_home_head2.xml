@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--婚-->
+        <LinearLayout
+            android:id="@+id/ll_hun"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/hun"
+                android:layout_width="@dimen/home_hand2_img"
+                android:layout_height="@dimen/home_hand2_img"
+                android:src="@drawable/icon_nav_search" />
+
+            <TextView
+                android:id="@+id/text_hun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找商家" />
+
+        </LinearLayout>
+
+        <!--礼-->
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/ll_li"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/li"
+                android:layout_width="@dimen/home_hand2_img"
+                android:layout_height="@dimen/home_hand2_img"
+                android:src="@drawable/icon_nav_search" />
+
+            <TextView
+                android:id="@+id/text_li"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找商家" />
+
+        </LinearLayout>
+
+        <!--嘉-->
+        <LinearLayout
+            android:id="@+id/ll_jia"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/jia"
+                android:layout_width="@dimen/home_hand2_img"
+                android:layout_height="@dimen/home_hand2_img"
+                android:src="@drawable/icon_nav_search" />
+
+            <TextView
+                android:id="@+id/text_jia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找商家" />
+
+        </LinearLayout>
+
+        <!--年-->
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/ll_nian"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/nian"
+                android:layout_width="@dimen/home_hand2_img"
+                android:layout_height="@dimen/home_hand2_img"
+                android:src="@drawable/icon_nav_search" />
+
+            <TextView
+                android:id="@+id/text_nian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找商家" />
+
+        </LinearLayout>
+
+        <!--华-->
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/ll_hua"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/hua"
+                android:layout_width="@dimen/home_hand2_img"
+                android:layout_height="@dimen/home_hand2_img"
+                android:src="@drawable/icon_nav_search" />
+
+            <TextView
+                android:id="@+id/text_hua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找商家" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_nav_search"
+        android:id="@+id/head2_bigImg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+</LinearLayout>

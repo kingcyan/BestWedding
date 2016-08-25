@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--上-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/it1_home_img1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/icon_nav_search" />
+
+        <TextView
+            android:id="@+id/it1_home_text1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@id/it1_home_img1"
+            android:singleLine="true"
+            android:text="北京润土传媒摄像"
+            android:textSize="@dimen/home_it1_head1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/it1_home_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/it1_home_text1"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/it1_home_img1"
+            android:text="婚纱摄影"
+            android:textSize="@dimen/home_it1_head2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            android:src="@drawable/icom_show_guanzhu" />
+
+    </RelativeLayout>
+
+
+    <!--中-->
+    <ImageView
+        android:id="@+id/it1_home_img2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <!--下-->
+
+    <TextView
+        android:id="@+id/it1_home_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/home_it1_bottom1_pading"
+        android:text="凤凰岭特惠1000套系【可分期】"
+        android:textSize="@dimen/home_it1_bottom1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/it1_home_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:id="@+id/it1_home_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/it1_home_text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/home_item_text_style"
+            android:padding="3dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_toRightOf="@id/it1_home_text6"
+            android:id="@+id/it1_home_text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/home_item_text_style"
+            android:padding="3dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/it1_home_text7"
+            android:id="@+id/it1_home_text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/home_item_text_style"
+            android:padding="3dp"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:src="@drawable/res_ics_work_collect_gray"
+            android:layout_toLeftOf="@+id/it1_home_text9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/it1_home_text9"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:text="175"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>
