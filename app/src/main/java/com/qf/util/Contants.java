@@ -28,5 +28,4 @@ public interface Contants {
     //发现页面数据
     String DIS_LIST="/p/wedding/index.php/home/APISubPage/SubPagesListV2?cate_id=0&page=1&per_page=10";
 
-//    String DIS_MOODS = "/p/wedding/index.php/home/APISubPage/SubPagesListV2?cate_id=1&page=1&per_page=10";
 }
