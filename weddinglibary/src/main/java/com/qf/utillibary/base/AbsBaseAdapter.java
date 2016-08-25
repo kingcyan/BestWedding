@@ -94,7 +94,7 @@ public abstract class AbsBaseAdapter<T> extends BaseAdapter{
      */
     public abstract void bindDatas(ViewHodler viewHodler, T data);
 
-    class ViewHodler{
+    public class ViewHodler{
         private View layoutView;
         private Map<Integer, View> map = new HashMap<>();
         public ViewHodler(View layoutView){

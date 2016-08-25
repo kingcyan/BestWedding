@@ -14,10 +14,25 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class MyApplication extends Application{
     public static JsonUtil utils;
+    public static JsonUtil home_utils;
+
     @Override
     public void onCreate() {
         super.onCreate();
         utils = initRetrofit();
+
+        home_utils = home_initRetrofit();
+    }
+
+    private JsonUtil home_initRetrofit() {
+        /**得到Retrofit 对象*/
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(Contants.HTTP_HOME_ROOT)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        /**得到刚刚写的方法*/
+        return retrofit.create(JsonUtil.class);
+
     }
 
     public JsonUtil initRetrofit(){
@@ -29,4 +44,6 @@ public class MyApplication extends Application{
         /**得到刚刚写的方法*/
         return retrofit.create(JsonUtil.class);
     }
+
+
 }

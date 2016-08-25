@@ -6,6 +6,24 @@
     <color name="colortextchecked">#ff9c86</color>
     <color name="colortextunchecked">#ADADAD</color>
 
+    <!--首页head-->
+
+    <!--head1   editText-->
+
+    <color name="colorEditText">#9a9aa7</color>
+    <color name="city_background">#f2f0f0</color>
+
+    <!--城市选择-->
+    <color name="color_chengshi_button">#a5d6ec</color>
+    <color name="color_white">#fff</color>    <!--白色-->
+
+    <!--公共-->
+    <color name="financial_backgrand">#e6e3e3</color>
+
+
+
+
+
 
     <!--我的页面-->
     <color name="mine_title_color">#ADADAD</color>

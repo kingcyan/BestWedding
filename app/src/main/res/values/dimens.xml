@@ -12,6 +12,31 @@
     <dimen name="ToolImageHeight">80dp</dimen>
     <dimen name="ImageML">20dp</dimen>
 
+    <!--首页-->
+    <dimen name="home_hand1_text">14sp</dimen>
+    <dimen name="home_hand2_img">60dp</dimen>
+
+    <dimen name="home_it1_head1">20sp</dimen>
+    <dimen name="home_it1_head2">14sp</dimen>
+    <dimen name="home_it1_bottom1">16sp</dimen>
+    <dimen name="home_it1_bottom1_pading">7dp</dimen>
+
+    <dimen name="home_it2_bottom2_imghight">90dp</dimen>
+    <dimen name="home_it2_home_text4_padingleft">5dp</dimen>
+    <dimen name="home_it2_home_text4_padingRight">20dp</dimen>
+    <!--city城市选择页-->
+    <dimen name="city_editTextsize">14dp</dimen>
+    <!--城市字母字体pading-->
+    <dimen name="city_zimu_pading">7dp</dimen>
+    <dimen name="city_zimu_size">14dp</dimen>
+    <dimen name="listView_city_size">24dp</dimen>    <!--ListView城市字体大小-->
+
+
+    <!--金融超市-->
+    <dimen name="financial1">60dp</dimen>
+    <dimen name="financial2">80dp</dimen>
+    <dimen name="financialToobar_text">24sp</dimen>
+
     <!--新娘说页面-->
     <dimen name="BrideTitle">14sp</dimen>
     <dimen name="BrideMargin">10dp</dimen>

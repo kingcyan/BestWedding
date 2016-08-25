@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:id="@+id/global1_img1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/financial1" />
+
+    <ImageView
+
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:id="@+id/global2_img1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/financial2" />
+
+    <ImageView
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:id="@+id/global2_img2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/financial2" />
+
+    <ImageView
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:id="@+id/global2_img3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/financial2" />
+
+
+    <!--下三个-->
+    <ImageView
+        android:paddingTop="8dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:id="@+id/global1_img2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/financial1" />
+
+    <ImageView
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:id="@+id/global2_img4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/financial2" />
+
+    <ImageView
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:id="@+id/global2_img5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/financial2" />
+
+    <ImageView
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:id="@+id/global2_img6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/financial2" />
+
+</LinearLayout>
