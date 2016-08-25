@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
+                android:divider="@drawable/tool_divider"
+                android:showDividers="middle"
                 android:layout_height="@dimen/ToolImageHeight"
                 android:layout_below="@id/tool_head_img"
                 android:orientation="horizontal">
@@ -20,9 +22,11 @@
             android:src="@drawable/icon_wedding_task"
             />
         <TextView
+            android:id="@+id/marry_task"
             android:layout_marginLeft="@dimen/MarginRingt"
-            android:layout_alignTop="@+id/Weddingplan"
+            android:layout_marginTop="@dimen/tool_relative_margintop"
             android:layout_toRightOf="@+id/Weddingplan"
+            android:textSize="@dimen/tool_relative_big_textSize"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Tool_TitlePlan"
@@ -33,6 +37,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Tool_TitleStudy"
+            android:layout_alignLeft="@+id/marry_task"
+            android:textSize="@dimen/tool_relative_small_textSize"
             android:layout_toRightOf="@id/Weddingplan"
             android:layout_alignBottom="@id/Weddingplan"
             />
@@ -54,11 +60,13 @@
             android:src="@drawable/icon_wedding_card"
             />
         <TextView
+            android:id="@+id/ele_invitation"
+            android:layout_marginTop="@dimen/tool_relative_margintop"
             android:layout_marginLeft="@dimen/MarginRingt"
-            android:layout_alignTop="@+id/Invitation"
             android:layout_toRightOf="@+id/Invitation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/tool_relative_big_textSize"
             android:text="@string/Tool_TitleInvitation"
             />
 
@@ -67,6 +75,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Tool_TitleFree"
+            android:textSize="@dimen/tool_relative_small_textSize"
+            android:layout_alignLeft="@+id/ele_invitation"
             android:layout_toRightOf="@id/Invitation"
             android:layout_alignBottom="@id/Invitation"
             />

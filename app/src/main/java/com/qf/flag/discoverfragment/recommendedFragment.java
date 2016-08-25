@@ -21,7 +21,7 @@ import retrofit2.Response;
  * Created by King
  * 2016/8/23
  */
-public class recommendedFragment extends BaseFragment {
+public class RecommendedFragment extends BaseFragment {
     RecyclerView recyclerView;
     List<DiscoverEntity.DataBean.ListBean> datas;
 
@@ -54,7 +54,7 @@ public class recommendedFragment extends BaseFragment {
 
     //获取数据
     private void getDatas() {
-        Call<DiscoverEntity> call = MyApplication.utils.getDisDatas();
+        Call<DiscoverEntity> call = MyApplication.utils.getDisDatas(0,0);
         call.enqueue(new Callback<DiscoverEntity>() {
             @Override
             public void onResponse(Call<DiscoverEntity> call, Response<DiscoverEntity> response) {

@@ -2,7 +2,6 @@ package com.qf.flag.discoverfragment;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -56,8 +55,8 @@ public class DiscoverJumpActivity extends BaseActivity implements View.OnClickLi
         iv_back.setOnClickListener(this);
 
         jumpHeadimg = findViewByIds(R.id.head_afterjump_img);
-        Log.e("TAG", "init: "+getIntent().getStringExtra("key"));
-        Glide.with(this).load(getIntent().getStringExtra("key")).into(jumpHeadimg);
+//        Log.e("TAG", "init: "+getIntent().getStringExtra("key"));
+        Glide.with(this).load(getIntent().getStringExtra("key")).fitCenter().into(jumpHeadimg);
 
 
 

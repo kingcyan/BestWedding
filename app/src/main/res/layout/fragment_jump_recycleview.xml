@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+        <!-- 图片 -->
+        <ImageView
+            android:id="@+id/jump_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"/>
+
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/jump_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jump_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"
+            android:text="标题"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_s"
+            android:layout_below="@+id/jump_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <!-- 简介 -->
+            <TextView
+                android:id="@+id/jump_news_summy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jump_news_title"
+                android:layout_alignLeft="@id/jump_news_title"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:text="概述"
+                android:textColor="#919194"
+                android:ellipsize="end"
+                />
+
+            <!-- 报名 -->
+            <TextView
+                android:id="@+id/jump_baoming_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="XX"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人已报名"
+                android:textSize="14sp"
+                />
+            <!-- 关注 -->
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/jump_focus_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="XX"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+
+</LinearLayout>

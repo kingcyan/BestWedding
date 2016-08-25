@@ -66,7 +66,7 @@ public interface Contants {
     String DIS_HEADIMG = "p/wedding/index.php/home/APIPosterBlock/block_info?id=1018&app_version=6.8.7&city=200";
 
     //发现页面数据
-    String DIS_LIST="/p/wedding/index.php/home/APISubPage/SubPagesListV2?cate_id=0&page=1&per_page=10";
+    String DIS_LIST="/p/wedding/index.php/home/APISubPage/SubPagesListV2?cate_id=&page=&per_page=10";
 
     //发现页-头部图片点击跳转
     String DISCOVER_JUMPRECYCLEVIEW = "p/wedding/home/APIActivityZero/list?city_id=200";

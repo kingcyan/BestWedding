@@ -1,61 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
     <!-- 标题 -->
-
-
-    <TextView
-        android:background="#fff"
-        android:id="@+id/tool_title"
-        android:layout_width="wrap_content"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:text="@string/Tool_Title"
-        android:textColor="@color/colortextchecked"
-        android:textSize="@dimen/ToolTitleSize"
-        />
-
-    <TextView
-        android:id="@+id/tool_tv_share"
-        android:layout_width="wrap_content"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginRight="@dimen/MarginRingt"
-        android:gravity="center"
-        android:text="@string/Tool_TitleRight"
-        android:textColor="@color/colortextchecked"
-        android:textSize="@dimen/ToolTitleRightSize"
-        />
-
-    <!--分割线-->
-    <View
-        android:id="@+id/view_divider"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/ViewHalving"
-        android:layout_below="@+id/tool_tv_share"
-        android:background="@color/colortextunchecked"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/tool_head_img"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/ToolImageHeightmin"
-        android:layout_below="@id/view_divider"
-        android:clickable="true"
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
 
-    <include
-        android:id="@+id/Img"
-        layout="@layout/tools_tab"
-        />
+        <TextView
+            android:background="#fff"
+            android:id="@+id/tool_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/Tool_Title"
+            android:textColor="@color/colortextchecked"
+            android:textSize="@dimen/ToolTitleSize"
+            />
 
-    <include
-        layout="@layout/tool_tablayout"
-        />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/tool_tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/MarginRingt"
+            android:gravity="center"
+            android:text="@string/Tool_TitleRight"
+            android:textColor="@color/colortextchecked"
+            android:textSize="@dimen/ToolTitleRightSize"
+            />
+        </RelativeLayout>
+
+        <!--分割线-->
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ViewHalving"
+            android:background="@color/colortextunchecked"
+            />
+
+        <ImageView
+            android:id="@+id/tool_head_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ToolImageHeightmin"
+            android:clickable="true"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_line_height"
+            android:background="@color/mine_view_line_color"
+            />
+
+        <include
+            android:id="@+id/Img"
+            layout="@layout/tools_tab"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_more_height"
+            android:background="@color/mine_viewmore_line_color"/>
+
+        <include
+            layout="@layout/tool_tablayout"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
 
 

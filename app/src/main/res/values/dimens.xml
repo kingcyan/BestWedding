@@ -4,13 +4,17 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <!--工具页面参数-->
+    <dimen name="tool_relative_margintop">8dp</dimen>
+    <dimen name="tool_relative_big_textSize">14sp</dimen>
+    <dimen name="tool_relative_small_textSize">12sp</dimen>
     <dimen name="ToolTitleSize">20sp</dimen>
     <dimen name="ToolTitleRightSize">14sp</dimen>
     <dimen name="MarginRingt">5dp</dimen>
     <dimen name="ViewHalving">0.5dp</dimen>
-    <dimen name="ToolImageHeightmin">130dp</dimen>
-    <dimen name="ToolImageHeight">80dp</dimen>
+    <dimen name="ToolImageHeightmin">110dp</dimen>
+    <dimen name="ToolImageHeight">60dp</dimen>
     <dimen name="ImageML">20dp</dimen>
+    <dimen name="tool_view_bottom_hoeight">10dp</dimen>
 
     <!--首页-->
     <dimen name="home_hand1_text">14sp</dimen>
