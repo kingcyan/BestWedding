@@ -120,10 +120,7 @@ public class HomeFragment extends BaseFragment {
         setHomeHeadImg(view);
 
         webView = new WebView(getContext());
-
-
         settings = webView.getSettings();
-
         //设置webview可支持js脚本
         settings.setJavaScriptEnabled(true);
         //设置超链接能响应
