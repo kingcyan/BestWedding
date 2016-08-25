@@ -10,6 +10,7 @@ import com.qf.entity.ToolEntity;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 /**
  * Created by King
@@ -74,7 +75,7 @@ public interface JsonUtil {
 
     //新娘说页面数据
     @GET(Contants.BRIDE_URL)
-    Call<BrideEntity> getBrideUrl();
+    Call<BrideEntity> getBrideUrl(@Query("cate_id") int cate_id,@Query("page") int page1);
 
     //发现页面头部的图片
     @GET(Contants.DIS_HEADIMG)
