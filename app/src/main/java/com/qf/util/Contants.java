@@ -49,8 +49,6 @@ public interface Contants {
     String HOME_WEDDING_EMCEE = "/p/wedding/index.php/home/APIFrontPageFeed/index?cid=0&per_page=20&page=1&property_id=11";
 
 
-
-
     /**
      * 工具页面
      */

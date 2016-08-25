@@ -1,6 +1,8 @@
 package com.qf.util;
 
 import com.qf.entity.CityEntity;
+import com.qf.entity.DiscoverEntity;
+import com.qf.entity.Discover_head_img;
 import com.qf.entity.FinancialEntity1;
 import com.qf.entity.FinancialEntity2;
 import com.qf.entity.HomeAllEntity;
