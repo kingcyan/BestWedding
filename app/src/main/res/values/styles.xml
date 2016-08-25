@@ -27,4 +27,5 @@
         <item name="android:activityCloseExitAnimation">@anim/city_approach_out</item>
     </style>
 
+
 </resources>

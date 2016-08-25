@@ -23,4 +23,12 @@
 
 
 
+
+
+    <!--我的页面-->
+    <color name="mine_title_color">#ADADAD</color>
+    <color name="mine_text_right_color">#878282</color>
+    <color name="mine_view_line_color">#e6e1e1</color>
+    <color name="mine_viewmore_line_color">#e9e7e7</color>
+
 </resources>

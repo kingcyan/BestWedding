@@ -3,10 +3,490 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
+    <!--我的-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:text="@string/mine_titlebar_name"
+            android:textColor="@color/mine_title_color"
+            android:textSize="@dimen/mine_titl_textSize"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="我的fragment"
-        />
+        <ImageView
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_setting"
+            android:layout_marginLeft="@dimen/mine_img_marginright"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_notice_red"
+            android:layout_marginRight="@dimen/mine_img_marginright"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_line_height"
+            android:background="@color/mine_view_line_color"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <!--整个垂直ScrollView-->
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--ScrollView包裹的一个直接子控件（垂直摆放）-->
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!--用户信息-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_user_height">
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/mine_userimg"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/my_g"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/mine_img_marginleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:clickable="true"
+                    android:layout_marginRight="@dimen/mine_img_marginright"
+                    android:id="@+id/mine_guide_right"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/indicator_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/mine_username"
+                    android:text="@string/mine_user_name"
+                    android:textColor="#000"
+                    android:textSize="@dimen/relative_titleName_textSize"
+                    android:layout_toRightOf="@+id/mine_userimg"
+                    android:layout_marginLeft="@dimen/mine_text_margin15"
+                    android:layout_marginTop="@dimen/mine_text_margin15"
+                    android:layout_marginBottom="@dimen/mine_text_margin5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/mine_weddingday"
+                    android:text="@string/mine_marryDate"
+                    android:textSize="@dimen/relative_rightSummy_textSize"
+                    android:layout_toRightOf="@+id/mine_userimg"
+                    android:layout_below="@+id/mine_username"
+                    android:layout_marginLeft="@dimen/mine_text_margin15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="@string/mine_dateXX"
+                    android:textSize="@dimen/relative_rightSummy_textSize"
+                    android:layout_toRightOf="@+id/mine_weddingday"
+                    android:layout_below="@+id/mine_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_line_height"
+                    android:background="@color/mine_view_line_color"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:divider="@drawable/mine_divider"
+                android:showDividers="middle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_user_height">
+
+            <TextView
+                android:paddingTop="@dimen/relative_top_drawablePadding"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/mine_appointment"
+                android:textSize="@dimen/textSize_summy12"
+                android:drawableTop="@drawable/icon_my_reservation"
+                android:layout_width="@dimen/textSize_width_rate"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/mine_order"
+                android:textSize="@dimen/textSize_summy12"
+                android:drawableTop="@drawable/icon_my_order"
+                android:paddingTop="@dimen/relative_top_drawablePadding"
+                android:layout_width="@dimen/textSize_width_rate"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/mine_buyerCar"
+                android:textSize="@dimen/textSize_summy12"
+                android:drawableTop="@drawable/icon_my_cart"
+                android:paddingTop="@dimen/relative_top_drawablePadding"
+                android:layout_width="@dimen/textSize_width_rate"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:text="@string/mine_sign"
+                android:textSize="@dimen/textSize_summy12"
+                android:drawableTop="@drawable/icon_sign"
+                android:paddingTop="@dimen/relative_top_drawablePadding"
+                android:layout_width="@dimen/textSize_width_rate"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                />
+
+            </LinearLayout>
+
+            <!--分隔栏-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_more_height"
+                android:background="@color/mine_viewmore_line_color"
+                />
+
+
+            <!--钱包栏-->
+            <RelativeLayout
+                android:id="@+id/relative_money"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/relative_title_height">
+
+                <TextView
+                    android:text="@string/mine_money_name"
+                    android:textSize="@dimen/relative_titleName_textSize"
+                    android:drawableLeft="@drawable/icon_my_ticket"
+                    android:drawablePadding="@dimen/relative_left_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/relative_title_marginleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/mine_money_right"
+                    android:textColor="@color/mine_text_right_color"
+                    android:textSize="@dimen/relative_rightSummy_textSize"
+                    android:drawableRight="@drawable/indicator_arrow"
+                    android:drawablePadding="@dimen/relative_right_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/relative_title_marginright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_line_height"
+                    android:background="@color/mine_view_line_color"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+
+            <!--金融栏-->
+            <RelativeLayout
+                android:id="@+id/relative_financial"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/relative_title_height">
+
+                <TextView
+                    android:text="@string/mine_financial_name"
+                    android:textSize="@dimen/relative_titleName_textSize"
+                    android:drawableLeft="@drawable/icon_recruit_merchant"
+                    android:drawablePadding="@dimen/relative_left_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/relative_title_marginleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/mine_financial_right"
+                    android:textColor="@color/mine_text_right_color"
+                    android:textSize="@dimen/relative_rightSummy_textSize"
+                    android:drawableRight="@drawable/indicator_arrow"
+                    android:drawablePadding="@dimen/relative_right_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/relative_title_marginright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <!--分隔栏-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_more_height"
+                android:background="@color/mine_viewmore_line_color"
+                />
+
+            <!--收藏栏-->
+            <RelativeLayout
+                android:id="@+id/relative_collect"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/relative_title_height">
+
+                <TextView
+                    android:text="@string/mine_collect_name"
+                    android:textSize="@dimen/relative_titleName_textSize"
+                    android:drawableLeft="@drawable/icon_work_case"
+                    android:drawablePadding="@dimen/relative_left_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/relative_title_marginleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/mine_collect_right"
+                    android:textColor="@color/mine_text_right_color"
+                    android:textSize="@dimen/relative_rightSummy_textSize"
+                    android:drawableRight="@drawable/indicator_arrow"
+                    android:drawablePadding="@dimen/relative_right_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/relative_title_marginright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_line_height"
+                    android:background="@color/mine_view_line_color"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+
+            <!--关注栏-->
+            <RelativeLayout
+                android:id="@+id/relative_focus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/relative_title_height">
+
+                <TextView
+                    android:text="@string/mine_focus_name"
+                    android:textSize="@dimen/relative_titleName_textSize"
+                    android:drawableLeft="@drawable/icon_followed"
+                    android:drawablePadding="@dimen/relative_left_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/relative_title_marginleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/mine_focus_right"
+                    android:textColor="@color/mine_text_right_color"
+                    android:textSize="@dimen/relative_rightSummy_textSize"
+                    android:drawableRight="@drawable/indicator_arrow"
+                    android:drawablePadding="@dimen/relative_right_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/relative_title_marginright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+            <!--分隔栏-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_more_height"
+                android:background="@color/mine_viewmore_line_color"
+                />
+
+
+            <!--话题栏-->
+            <RelativeLayout
+                android:id="@+id/relative_topic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/relative_title_height">
+
+                <TextView
+                    android:text="@string/mine_topic_name"
+                    android:textSize="@dimen/relative_titleName_textSize"
+                    android:drawableLeft="@drawable/icon_thread"
+                    android:drawablePadding="@dimen/relative_left_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/relative_title_marginleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/mine_topic_right"
+                    android:textColor="@color/mine_text_right_color"
+                    android:textSize="@dimen/relative_rightSummy_textSize"
+                    android:drawableRight="@drawable/indicator_arrow"
+                    android:drawablePadding="@dimen/relative_right_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/relative_title_marginright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_line_height"
+                    android:background="@color/mine_view_line_color"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+
+            <!--活动栏-->
+            <RelativeLayout
+                android:id="@+id/relative_activity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/relative_title_height">
+
+                <TextView
+                    android:text="@string/mine_activity_name"
+                    android:textSize="@dimen/relative_titleName_textSize"
+                    android:drawableLeft="@drawable/icon_my_entry"
+                    android:drawablePadding="@dimen/relative_left_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/relative_title_marginleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/mine_activity_right"
+                    android:textColor="@color/mine_text_right_color"
+                    android:textSize="@dimen/relative_rightSummy_textSize"
+                    android:drawableRight="@drawable/indicator_arrow"
+                    android:drawablePadding="@dimen/relative_right_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/relative_title_marginright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <!--分隔栏-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_more_height"
+                android:background="@color/mine_viewmore_line_color"
+                />
+
+            <!--我是商家栏-->
+            <RelativeLayout
+                android:id="@+id/relative_imMerchant"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/relative_title_height">
+
+                <TextView
+                    android:text="@string/mine_imMerchant_name"
+                    android:textSize="@dimen/relative_titleName_textSize"
+                    android:drawableLeft="@drawable/icon_merchant_r"
+                    android:drawablePadding="@dimen/relative_left_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/relative_title_marginleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/mine_imMerchant_right"
+                    android:textColor="@color/mine_text_right_color"
+                    android:textSize="@dimen/relative_rightSummy_textSize"
+                    android:drawableRight="@drawable/indicator_arrow"
+                    android:drawablePadding="@dimen/relative_right_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/relative_title_marginright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_line_height"
+                    android:background="@color/mine_view_line_color"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+
+            <!--联系客服栏-->
+            <RelativeLayout
+                android:id="@+id/relative_contactService"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/relative_title_height">
+
+                <TextView
+                    android:text="@string/mine_contactService_name"
+                    android:textSize="@dimen/relative_titleName_textSize"
+                    android:drawableLeft="@drawable/icon_feedback"
+                    android:drawablePadding="@dimen/relative_left_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/relative_title_marginleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/mine_contactService_right"
+                    android:textColor="@color/mine_text_right_color"
+                    android:textSize="@dimen/relative_rightSummy_textSize"
+                    android:drawableRight="@drawable/indicator_arrow"
+                    android:drawablePadding="@dimen/relative_right_drawablePadding"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/relative_title_marginright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <!--预留底部高度-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_more_bottom_height"
+                android:background="@color/mine_viewmore_line_color"
+                />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -67,11 +67,20 @@ public interface JsonUtil {
     Call<HomeAllEntity> getHomeWeddingEmceeData();      //婚礼司仪
 
     //工具
+    //工具页面头部图片
     @GET(Contants.TOOL_HEAD_IMG)
     Call<ToolEntity> getToolIMG();
 
 
-
+    //新娘说页面数据
     @GET(Contants.BRIDE_URL)
     Call<BrideEntity> getBrideUrl();
+
+    //发现页面头部的图片
+    @GET(Contants.DIS_HEADIMG)
+    Call<Discover_head_img> getDisImg();
+
+    //发现页面推荐数据
+    @GET(Contants.DIS_LIST)
+    Call<DiscoverEntity> getDisDatas();
 }

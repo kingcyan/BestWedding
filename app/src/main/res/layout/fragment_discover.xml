@@ -4,9 +4,68 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="发现页的fragment"
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="8"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="13dp"-->
+            <!--android:background="@drawable/discover_head"-->
+            <!--android:drawableLeft="@drawable/icon_nav_search"-->
+            <!--android:drawablePadding="5dp"-->
+            <!--android:gravity="center|left"-->
+            <!--android:text="搜索商家、套餐、话题"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@mipmap/ic_launcher"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@mipmap/ic_launcher"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!-- 头部图片 -->
+    <ImageView
+        android:longClickable="true"
+        android:id="@+id/discover_head_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/IMGheight"
+        android:clickable="true"
         />
+
+    <!-- 滑动标题控件 -->
+    <com.qf.flag.discoverfragment.DiscoverTabView
+        android:id="@+id/tabview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/dicover_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
 </LinearLayout>
