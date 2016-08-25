@@ -1,13 +1,14 @@
 package com.qf.util;
 
+import com.qf.entity.BrideEntity;
 import com.qf.entity.CityEntity;
 import com.qf.entity.DiscoverEntity;
+import com.qf.entity.DiscoverJumpRVEntity;
 import com.qf.entity.Discover_head_img;
 import com.qf.entity.FinancialEntity1;
 import com.qf.entity.FinancialEntity2;
 import com.qf.entity.HomeAllEntity;
 import com.qf.entity.HomeHeadEntity;
-import com.qf.entity.BrideEntity;
 import com.qf.entity.ToolEntity;
 
 import retrofit2.Call;
@@ -86,4 +87,8 @@ public interface JsonUtil {
     //发现页面推荐数据
     @GET(Contants.DIS_LIST)
     Call<DiscoverEntity> getDisDatas();
+
+    //发现页面跳转后recyclerView数据
+    @GET(Contants.DISCOVER_JUMPRECYCLEVIEW)
+    Call<DiscoverJumpRVEntity> getJumpRVDatas();
 }

@@ -25,7 +25,8 @@
 
         <!--金融超市-->
         <activity android:name=".FinancialActivity"/>
-        <activity android:name="com.qf.flag.discoverfragment.JumpAactivity"/>
+        <!--发现页图片跳转页面-->
+        <activity android:name="com.qf.flag.discoverfragment.DiscoverJumpActivity"/>
     </application>
 
 </manifest>

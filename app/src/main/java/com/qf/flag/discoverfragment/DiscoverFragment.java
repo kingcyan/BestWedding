@@ -121,7 +121,7 @@ public class DiscoverFragment extends BaseFragment implements View.OnClickListen
     // 点击图片跳转另一个Activity
     @Override
     public void onClick(View v) {
-        Intent in = new Intent(getActivity(), JumpAactivity.class);
+        Intent in = new Intent(getActivity(), DiscoverJumpActivity.class);
         in.putExtra("key", toHeadImg);
         startActivity(in);
     }
