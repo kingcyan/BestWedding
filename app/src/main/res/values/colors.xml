@@ -11,7 +11,7 @@
     <!--head1   editText-->
 
     <color name="colorEditText">#9a9aa7</color>
-    <color name="city_background">#ADADAD</color>
+    <color name="city_background">#f2f0f0</color>
 
     <!--城市选择-->
     <color name="color_chengshi_button">#a5d6ec</color>

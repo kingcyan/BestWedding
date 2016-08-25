@@ -17,6 +17,8 @@ import com.qf.adapter.HomeAllAdapter;
 import com.qf.bestwedding.CitySelectActivity;
 import com.qf.bestwedding.FinancialActivity;
 import com.qf.bestwedding.R;
+import com.qf.entity.CityEntity;
+import com.qf.entity.CityEntity2;
 import com.qf.util.Contants;
 import com.qf.utillibary.base.BaseFragment;
 
@@ -90,6 +92,8 @@ public class HomeFragment extends BaseFragment {
     LinearLayout llNian;
     @Bind(R.id.ll_hua)
     LinearLayout llHua;
+    private WebView webView;
+    private WebSettings settings;
 
 
     @Override
@@ -102,10 +106,6 @@ public class HomeFragment extends BaseFragment {
     protected void init(View view) {
 
         ButterKnife.bind(this, view);
-
-
-
-
         viewPager = (ViewPager) view.findViewById(R.id.home_bottom_viewpager);
         fgmData = new ArrayList<>();
 
@@ -118,6 +118,28 @@ public class HomeFragment extends BaseFragment {
             fgmData.add(fragment);
         }
         setHomeHeadImg(view);
+
+        webView = new WebView(getContext());
+
+
+        settings = webView.getSettings();
+
+        //设置webview可支持js脚本
+        settings.setJavaScriptEnabled(true);
+        //设置超链接能响应
+        webView.setWebViewClient(new WebViewClient() {
+            /**
+             * 重定向
+             * @param view
+             * @param url
+             * @return
+             */
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);  //将该url重定向到app里面，这样就不再是去浏览器中打开该网页了
+                return super.shouldOverrideUrlLoading(view, url);
+            }
+        });
     }
 
 
@@ -142,31 +164,12 @@ public class HomeFragment extends BaseFragment {
         switch (view.getId()) {
             case R.id.home_citySelect:
                 Toast.makeText(getActivity(), "点击了城市选择", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getActivity(), CitySelectActivity.class));
+                startActivityForResult(new Intent(getActivity(), CitySelectActivity.class),1);
                 break;
             case R.id.head2_bigImg:
                 Toast.makeText(getActivity(), "bigImg", Toast.LENGTH_SHORT).show();
-               WebView webView = new WebView(getContext());
                 getActivity().setContentView(webView);
                 webView.loadUrl(Contants.ASSEMBLY_ROOM);
-                WebSettings settings = webView.getSettings();
-
-                //设置webview可支持js脚本
-                settings.setJavaScriptEnabled(true);
-                //设置超链接能响应
-                webView.setWebViewClient(new WebViewClient() {
-                    /**
-                     * 重定向
-                     * @param view
-                     * @param url
-                     * @return
-                     */
-                    @Override
-                    public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                        view.loadUrl(url);  //将该url重定向到app里面，这样就不再是去浏览器中打开该网页了
-                        return super.shouldOverrideUrlLoading(view, url);
-                    }
-                });
                 break;
             case R.id.head3_img1:
                 Toast.makeText(getActivity(), "img1", Toast.LENGTH_SHORT).show();
@@ -179,27 +182,7 @@ public class HomeFragment extends BaseFragment {
                 break;
             case R.id.head3_img4:
                 Toast.makeText(getActivity(), "img4", Toast.LENGTH_SHORT).show();
-                WebView webView_img4 = new WebView(getContext());
-                getActivity().setContentView(webView_img4);
-                webView_img4.loadUrl(Contants.GLOBAL_TRAVEL);
-                WebSettings settings_img4 = webView_img4.getSettings();
-
-                //设置webview可支持js脚本
-                settings_img4.setJavaScriptEnabled(true);
-                //设置超链接能响应
-                webView_img4.setWebViewClient(new WebViewClient() {
-                    /**
-                     * 重定向
-                     * @param view
-                     * @param url
-                     * @return
-                     */
-                    @Override
-                    public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                        view.loadUrl(url);  //将该url重定向到app里面，这样就不再是去浏览器中打开该网页了
-                        return super.shouldOverrideUrlLoading(view, url);
-                    }
-                });
+                webView.loadUrl(Contants.GLOBAL_TRAVEL);
                 break;
             case R.id.head3_img5:
                 Toast.makeText(getActivity(), "img5", Toast.LENGTH_SHORT).show();
@@ -216,28 +199,8 @@ public class HomeFragment extends BaseFragment {
                 break;
             case R.id.ll_li:
                 Toast.makeText(getActivity(), "礼", Toast.LENGTH_SHORT).show();
-              WebView  webView1 = new WebView(getContext());
-                getActivity().setContentView(webView1);
-                webView1.loadUrl(Contants.Ask_Consultant);
-                WebSettings settings1 = webView1.getSettings();
-
-                //设置webview可支持js脚本
-                settings1.setJavaScriptEnabled(true);
-                //设置超链接能响应
-                webView1.setWebViewClient(new WebViewClient() {
-                    /**
-                     * 重定向
-                     * @param view
-                     * @param url
-                     * @return
-                     */
-                    @Override
-                    public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                        view.loadUrl(url);  //将该url重定向到app里面，这样就不再是去浏览器中打开该网页了
-                        return super.shouldOverrideUrlLoading(view, url);
-                    }
-                });
-
+                getActivity().setContentView(webView);
+                webView.loadUrl(Contants.Ask_Consultant);
                 break;
             case R.id.ll_jia:
                 Toast.makeText(getActivity(), "嘉", Toast.LENGTH_SHORT).show();
@@ -257,4 +220,17 @@ public class HomeFragment extends BaseFragment {
         ButterKnife.unbind(this);
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if(requestCode==1&&resultCode==11){
+            CityEntity2 cityEntity2 = (CityEntity2) data.getSerializableExtra("city");
+            homeHeadText1.setText(cityEntity2.getName());
+        }else if(requestCode==1&&resultCode==111){
+            CityEntity.DataBean.HotCityBean head_city = (CityEntity.DataBean.HotCityBean) data.getSerializableExtra("city1");
+            homeHeadText1.setText(head_city.getName());
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+
+    }
 }
