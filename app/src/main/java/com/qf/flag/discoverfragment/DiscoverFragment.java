@@ -43,7 +43,7 @@ public class DiscoverFragment extends BaseFragment implements View.OnClickListen
     ViewPager dicover_viewpager;
 
     //数据
-    String[] datas = {"推荐", "人气婚礼", "结婚经", "心机指南", "新风向"};
+    String[] datas = {" 推荐", "人气婚礼", "结婚经", "心机指南", "新风向"};
 
 
     @Override
@@ -82,9 +82,18 @@ public class DiscoverFragment extends BaseFragment implements View.OnClickListen
 
             @Override
             public Fragment getItem(int position) {
-
-                    return new recommendedFragment();
-
+                    if (position==0) {
+                        return new RecommendedFragment();
+                    }else if (position == 1) {
+                        return new HotWeddingFragment();
+                    }
+                    else if (position == 2) {
+                        return new MerryStoryFragment();
+                    }
+                    else if (position == 3) {
+                        return new HeartGuideFragment();
+                    }
+                return new WindDirectionFragment();
             }
         };
         dicover_viewpager.setAdapter(pagerAdapter);

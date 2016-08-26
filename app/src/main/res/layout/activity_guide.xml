@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/guide_vp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/guide_viewpager_height"/>
+
+        <LinearLayout
+            android:layout_below="@id/guide_vp"
+            android:id="@+id/ll_bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/guide_ll_height"
+            android:layout_marginBottom="@dimen/guide_ll_button_margin_bottom"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:text="@string/guide_button_login"
+                android:textColor="@color/guide_login_textColor"
+                android:layout_width="@dimen/guide_weight_0dp"
+                android:layout_height="@dimen/guide_ll_button_height"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/guide_button_margin40"
+                android:layout_marginRight="@dimen/guide_button_margin5"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/guide_bottom"
+
+                />
+            <Button
+                android:id="@+id/btn_regist"
+                android:text="@string/guide_button_regist"
+                android:textColor="@color/guide_regist_textColor"
+                android:layout_width="@dimen/guide_weight_0dp"
+                android:layout_height="@dimen/guide_ll_button_height"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/mine_text_margin5"
+                android:layout_marginRight="@dimen/guide_button_margin40"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/guide_bottom2"
+
+                />
+
+        </LinearLayout>
+
+</RelativeLayout>

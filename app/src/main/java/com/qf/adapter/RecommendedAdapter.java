@@ -2,7 +2,6 @@ package com.qf.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -92,7 +91,7 @@ public class RecommendedAdapter extends RecyclerView.Adapter {
     @Override
     public int getItemViewType(int position) {
 
-        Log.e("TAG", "getItemViewType: "+position );
+//        Log.e("TAG", "getItemViewType: "+position );
         if (position % 5 == 0 ||position % 5 == 1){
             return ITEM_TYPE.ITEM1.ordinal();
         }

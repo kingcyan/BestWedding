@@ -86,7 +86,7 @@ public interface JsonUtil {
 
     //发现页面推荐数据
     @GET(Contants.DIS_LIST)
-    Call<DiscoverEntity> getDisDatas();
+    Call<DiscoverEntity> getDisDatas(@Query("cate_id")int cate_id,@Query("page")int page);
 
     //发现页面跳转后recyclerView数据
     @GET(Contants.DISCOVER_JUMPRECYCLEVIEW)
