@@ -13,6 +13,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bigkoo.convenientbanner.ConvenientBanner;
+import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
+import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.qf.adapter.HomeAllAdapter;
 import com.qf.bestwedding.CitySelectActivity;
 import com.qf.bestwedding.FinancialActivity;
@@ -23,6 +30,7 @@ import com.qf.util.Contants;
 import com.qf.utillibary.base.BaseFragment;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import butterknife.Bind;
@@ -218,6 +226,8 @@ public class HomeFragment extends BaseFragment {
         ButterKnife.unbind(this);
     }
 
+
+    //activiy返回传值
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
@@ -230,4 +240,7 @@ public class HomeFragment extends BaseFragment {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
+
+
+
 }

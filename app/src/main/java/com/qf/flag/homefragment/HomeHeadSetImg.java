@@ -7,10 +7,21 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bigkoo.convenientbanner.ConvenientBanner;
+import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
 import com.bumptech.glide.Glide;
+import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.qf.bestwedding.MyApplication;
 import com.qf.bestwedding.R;
 import com.qf.entity.HomeHeadEntity;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -38,8 +49,19 @@ public class HomeHeadSetImg {
         Call<HomeHeadEntity> call = MyApplication.home_utils.getHomeHeadIMG();
 
         call.enqueue(new Callback<HomeHeadEntity>() {
+
+            private List<HomeHeadEntity.DataBean.FloorsBean.MAINTOPBANNERBean.HolesBean> holes;
+            private List<String> Lb_ing = new ArrayList<String>();
             @Override
             public void onResponse(Call<HomeHeadEntity> call, Response<HomeHeadEntity> response) {
+
+                //得到图片轮播图片
+                holes = response.body().getData().getFloors().getMAIN_TOP_BANNER().getHoles();
+                for (HomeHeadEntity.DataBean.FloorsBean.MAINTOPBANNERBean.HolesBean a:holes) {
+                    Lb_ing.add(a.getPosters().getImage_path());
+                }
+
+                new Carousel(context,Lb_ing).initView(view);
                 //婚礼嘉年华
                 Glide.with(context).load(response.body().getData().getFloors().getMAIN_ENTRY_BUTTON().getHoles().get(0).getPosters().getImage_path())
                         .into((ImageView) view.findViewById(R.id.hun));
@@ -90,6 +112,7 @@ public class HomeHeadSetImg {
             }
         });
     }
+
 
 
 }

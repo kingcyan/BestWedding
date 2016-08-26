@@ -7,6 +7,11 @@
 
 
     <!--动态Img-->
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/convenientBanner_showGoods"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:text="Hello World!"/>
 
     <!--head2  婚礼嘉年华-->
     <include layout="@layout/fragment_home_head2" />

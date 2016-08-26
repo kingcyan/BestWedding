@@ -21,7 +21,7 @@ import retrofit2.Response;
  * Created by King
  * 2016/8/23
  */
-public class RecommendedFragment extends BaseFragment {
+class RecommendedFragment extends BaseFragment {
     RecyclerView recyclerView;
     List<DiscoverEntity.DataBean.ListBean> datas;
 
