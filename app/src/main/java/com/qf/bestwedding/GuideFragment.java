@@ -1,13 +1,11 @@
 package com.qf.bestwedding;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import butterknife.Bind;
@@ -16,15 +14,11 @@ import butterknife.ButterKnife;
 /**
  * Created by Luckey on 2016/8/14.
  */
-public class GuideFragment extends Fragment implements View.OnClickListener {
+public class GuideFragment extends Fragment{
 
     @Bind(R.id.ivbg_guidefrag)
     ImageView ivbgGuidefrag;
 
-    @Bind(R.id.btn_login)
-    Button btn_login;
-    @Bind(R.id.btn_regist)
-    Button btnRegist;
 
     @Nullable
     @Override
@@ -43,8 +37,7 @@ public class GuideFragment extends Fragment implements View.OnClickListener {
             case 2:
                 ivbgGuidefrag.setImageResource(R.drawable.img_login_item_img3);
 
-                btn_login.setOnClickListener(this);
-                btnRegist.setOnClickListener(this);
+
                 break;
         }
         return viewf;
@@ -56,9 +49,5 @@ public class GuideFragment extends Fragment implements View.OnClickListener {
         ButterKnife.unbind(this);
     }
 
-    @Override
-    public void onClick(View view) {
-        startActivity(new Intent(getActivity(), MainActivity.class));
-        getActivity().finish();
-    }
+
 }

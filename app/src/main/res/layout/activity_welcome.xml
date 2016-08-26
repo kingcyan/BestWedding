@@ -4,8 +4,8 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
     <ImageView
-        android:src="@drawable/ic_guide_picture_0"
-        android:scaleType="centerCrop"
+        android:src="@drawable/splash"
+        android:scaleType="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

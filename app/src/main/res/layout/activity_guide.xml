@@ -1,12 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/guide_vp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/guide_vp"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"/>
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/guide_vp"
+            android:id="@+id/ll_bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:text="登陆"
+                android:textColor="#f00"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/guide_bottom"
+
+                />
+            <Button
+                android:id="@+id/btn_regist"
+                android:text="注册"
+                android:textColor="#fff"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/guide_bottom2"
+
+                />
+
+        </LinearLayout>
+
+</RelativeLayout>
