@@ -4,7 +4,16 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colortextchecked">#ff9c86</color>
-    <color name="colortextunchecked">#ADADAD</color>
+
+    <!--欢迎引导页-->
+    <color name="guide_stroke_color">#f00</color>
+    <color name="guide_solid_login_color">#fff</color>
+    <color name="guide_login_textColor">#f00</color>
+    <color name="guide_regist_textColor">#fff</color>
+
+    <color name="guide_stroke_regist_color">#f00</color>
+
+
 
     <!--首页head-->
 
@@ -23,6 +32,8 @@
 
     <!--工具-->
     <color name="tool_text_dark_color">#878282</color>
+    <color name="colortextunchecked">#878282</color>
+
 
 
 
