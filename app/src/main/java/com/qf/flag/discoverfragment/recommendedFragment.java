@@ -1,5 +1,6 @@
 package com.qf.flag.discoverfragment;
 
+import android.annotation.SuppressLint;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -21,6 +22,7 @@ import retrofit2.Response;
  * Created by King
  * 2016/8/23
  */
+@SuppressLint("ValidFragment")
 class RecommendedFragment extends BaseFragment {
     RecyclerView recyclerView;
     List<DiscoverEntity.DataBean.ListBean> datas;
