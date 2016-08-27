@@ -2,10 +2,10 @@ package com.qf.flag.discoverfragment;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
 import com.qf.bestwedding.MyApplication;
 import com.qf.bestwedding.R;
 import com.qf.entity.DiscoverJumpRVEntity;
@@ -27,13 +27,14 @@ public class DiscoverJumpActivity extends BaseActivity implements View.OnClickLi
     //返回按钮
     private ImageView iv_back;
     //头部图片
-    private ImageView jumpHeadimg;
+//    private ImageView jumpHeadimg;
 
     //发现页头部图片点击后跳转的url
 //    private String headJumpUrl;
 
     private RecyclerView jumpRecycleView;
     private List<DiscoverJumpRVEntity.DataBean.ListBean> data = new ArrayList<>();
+    private DiscoverJumpAdapter adapter;
 
     @Override
     public int getContentViewId() {
@@ -54,9 +55,9 @@ public class DiscoverJumpActivity extends BaseActivity implements View.OnClickLi
         //设置点击事件
         iv_back.setOnClickListener(this);
 
-        jumpHeadimg = findViewByIds(R.id.head_afterjump_img);
+//        jumpHeadimg = findViewByIds(R.id.head_afterjump_img);
 //        Log.e("TAG", "init: "+getIntent().getStringExtra("key"));
-        Glide.with(this).load(getIntent().getStringExtra("key")).fitCenter().into(jumpHeadimg);
+//        Glide.with(this).load(getIntent().getStringExtra("key")).fitCenter().into(jumpHeadimg);
 
 
 
@@ -64,14 +65,16 @@ public class DiscoverJumpActivity extends BaseActivity implements View.OnClickLi
 
         getJumpRecycleview();
 
-        DiscoverJumpAdapter adapter = new DiscoverJumpAdapter(this,data);
+        adapter = new DiscoverJumpAdapter(this,data);
         jumpRecycleView.setAdapter(adapter);
 
         LinearLayoutManager manager2 = new LinearLayoutManager(this);
         manager2.setOrientation(LinearLayoutManager.VERTICAL);
         jumpRecycleView.setLayoutManager(manager2);
 
-
+        //为RecyclerView添加HeaderView和FooterView
+        setHeaderView(jumpRecycleView);
+        setFooterView(jumpRecycleView);
 
 
     }
@@ -93,6 +96,20 @@ public class DiscoverJumpActivity extends BaseActivity implements View.OnClickLi
 
             }
         });
+    }
+
+    private void setHeaderView(RecyclerView view){
+        View header = LayoutInflater.from(this).inflate(R.layout.discover_jump_header, view, false);
+        ImageView headimg = (ImageView) header.findViewById(R.id.recyclerview_head_img);
+//        Glide.with(this).load(getIntent().getStringExtra("key")).fitCenter().into(headimg);
+        headimg.setImageResource(R.mipmap.ic_launcher);
+        adapter.setHeaderView(header);
+    }
+
+    private void setFooterView(RecyclerView view){
+        View footer = LayoutInflater.from(this).inflate(R.layout.discover_jump_footer, view, false);
+
+        adapter.setFooterView(footer);
     }
 
 

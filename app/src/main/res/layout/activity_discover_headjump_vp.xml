@@ -29,13 +29,13 @@
             />
     </RelativeLayout>
 
-    <ImageView
+    <!--<ImageView
         android:background="#ccc"
         android:src="@mipmap/ic_launcher"
         android:id="@+id/head_afterjump_img"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        />
+        />-->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/head_afterjump_cv"
         android:layout_width="match_parent"
