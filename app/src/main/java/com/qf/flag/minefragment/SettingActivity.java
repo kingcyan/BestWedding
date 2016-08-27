@@ -52,6 +52,7 @@ public class SettingActivity extends BaseActivity {
                 SettingActivity.this.finish();
                 break;
             case R.id.rl_account_safety:
+
                 break;
             case R.id.rl_opinion_feedback:
                 break;
