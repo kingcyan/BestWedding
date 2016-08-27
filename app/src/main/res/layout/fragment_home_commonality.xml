@@ -6,6 +6,7 @@
 
 
     <LinearLayout
+        android:id="@+id/search_area"
         android:padding="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
@@ -35,6 +36,7 @@
 
 
     <ImageView
+        android:id="@+id/search_remind"
         android:layout_gravity="center_vertical"
         android:layout_margin="3dp"
         android:layout_width="16dp"
@@ -43,6 +45,7 @@
         android:src="@drawable/icon_notice_red" />
 
     <ImageView
+        android:id="@+id/shopping_cart"
         android:layout_gravity="center_vertical"
         android:padding="4dp"
         android:layout_width="25dp"

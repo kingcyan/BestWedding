@@ -61,7 +61,9 @@
 
 
     <!--jump页面-->
-    <string name="jumptitle">0元试用</string>  <!--我的页面-->
+    <string name="jumptitle">0元试用</string>
+
+    <!--我的页面-->
     <string name="mine_titlebar_name">我的</string>
     <string name="mine_user_name">用户名</string>
     <string name="mine_marryDate">婚期:</string>
@@ -87,6 +89,17 @@
     <string name="mine_imMerchant_right">免费入驻</string>
     <string name="mine_contactService_name">联系客服</string>
     <string name="mine_contactService_right"></string>
+
+
+    <!--我的页面->setting页面-->
+    <string name="setting_title">设置</string>
+    <string name="setting_account_safety">账号安全</string>
+    <string name="setting_opinion_feedback">意见反馈</string>
+    <string name="setting_give_reputation">给婚礼纪好评</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_cache_unit">M</string>
+    <string name="setting_exit">退出登陆</string>
 
 
 </resources>

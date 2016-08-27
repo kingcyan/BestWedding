@@ -87,5 +87,14 @@
     <dimen name="mine_text_margin15">15dp</dimen>
     <dimen name="mine_text_margin5">5dp</dimen>
 
+    <!--我的页面->设置页面-->
+    <dimen name="setting_textSize">20sp</dimen>
+    <dimen name="setting_img_padding_left">20dp</dimen>
+    <dimen name="setting_relative_height">10dp</dimen>
+    <dimen name="setting_relative_margin20">20dp</dimen>
+    <dimen name="setting_padding_left">15dp</dimen>
+    <dimen name="setting_relative_textSize">14sp</dimen>
+    <dimen name="setting_margintop_1dp">1dp</dimen>
+
 
 </resources>

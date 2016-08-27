@@ -29,6 +29,9 @@
         <!--引导页面GuideActivity-->
         <activity android:name=".GuideActivity"/>
 
+        <!--设置页面SettingActivity-->
+        <activity android:name="com.qf.flag.minefragment.SettingActivity"/>
+
         <!--金融超市-->
         <activity android:name=".FinancialActivity"/>
         <!--发现页图片跳转页面-->

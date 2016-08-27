@@ -43,4 +43,8 @@
     <color name="mine_view_line_color">#e6e1e1</color>
     <color name="mine_viewmore_line_color">#e9e7e7</color>
 
+    <!--我的页面->设置页面-->
+    <color name="setting_title_color">#f00</color>
+    <color name="setting_background">#f0f0f2</color>
+    <color name="setting_relative_color">#fff</color>
 </resources>

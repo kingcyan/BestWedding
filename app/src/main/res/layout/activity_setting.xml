@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/setting_background"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--设置-->
+    <RelativeLayout
+        android:background="@color/setting_relative_color"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:text="@string/setting_title"
+            android:textColor="@color/setting_title_color"
+            android:textSize="@dimen/relative_titleName_textSize"
+            android:gravity="center_vertical|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/setting_back"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/setting_img_padding_left"
+            android:src="@drawable/res_ics_thinbackicon_red"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <!--账号安全-->
+    <RelativeLayout
+        android:id="@+id/rl_account_safety"
+        android:background="@color/setting_relative_color"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/setting_relative_height">
+        <TextView
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/setting_account_safety"
+            android:textSize="@dimen/setting_relative_textSize"
+            android:gravity="left|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:rotation="180"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:src="@drawable/res_ics_thinbackicon_red"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <!--意见反馈-->
+    <RelativeLayout
+        android:id="@+id/rl_opinion_feedback"
+        android:background="@color/setting_relative_color"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/setting_relative_height">
+        <TextView
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/setting_opinion_feedback"
+            android:textSize="@dimen/setting_relative_textSize"
+            android:gravity="left|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:rotation="180"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:src="@drawable/res_ics_thinbackicon_red"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <!--给婚礼纪好评-->
+    <RelativeLayout
+        android:id="@+id/rl_give_reputation"
+        android:background="@color/setting_relative_color"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/setting_relative_height">
+        <TextView
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/setting_give_reputation"
+            android:textSize="@dimen/setting_relative_textSize"
+            android:gravity="left|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:rotation="180"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:src="@drawable/res_ics_thinbackicon_red"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <!--关于我们-->
+    <RelativeLayout
+        android:id="@+id/rl_about_us"
+        android:background="@color/setting_relative_color"
+        android:layout_marginTop="@dimen/setting_margintop_1dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/setting_about_us"
+            android:textSize="@dimen/setting_relative_textSize"
+            android:gravity="left|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:rotation="180"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:src="@drawable/res_ics_thinbackicon_red"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <!--清除缓存-->
+    <RelativeLayout
+        android:id="@+id/rl_clear_cache"
+        android:background="@color/setting_relative_color"
+        android:layout_marginTop="@dimen/setting_margintop_1dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/clear_text"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/setting_clear_cache"
+            android:textSize="@dimen/setting_relative_textSize"
+            android:gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/clear_num"
+            android:text="3.8"
+            android:layout_marginLeft="10dp"
+           android:textSize="@dimen/setting_relative_textSize"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/clear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="@string/setting_cache_unit"
+            android:layout_toRightOf="@+id/clear_num"
+            android:textSize="@dimen/setting_relative_textSize"
+            android:gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:rotation="180"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:src="@drawable/res_ics_thinbackicon_red"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+    <!--退出登陆-->
+    <RelativeLayout
+        android:id="@+id/rl_exit"
+        android:background="@color/setting_relative_color"
+        android:layout_marginTop="@dimen/setting_relative_margin20"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/setting_exit"
+            android:textSize="@dimen/setting_relative_textSize"
+            android:textColor="@color/setting_title_color"
+            android:gravity="center|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
