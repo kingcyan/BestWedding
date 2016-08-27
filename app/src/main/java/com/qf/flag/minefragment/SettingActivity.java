@@ -55,6 +55,7 @@ public class SettingActivity extends BaseActivity {
 
                 break;
             case R.id.rl_opinion_feedback:
+
                 break;
             case R.id.rl_give_reputation:
                 break;
