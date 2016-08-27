@@ -71,6 +71,7 @@ class RecommendedFragment extends BaseFragment {
             @Override
             public void onFailure(Call<DiscoverEntity> call, Throwable t) {
 
+
             }
         });
     }
