@@ -4,7 +4,6 @@
     android:layout_height="30dp"
     android:orientation="horizontal">
 
-
     <LinearLayout
         android:id="@+id/search_area"
         android:padding="5dp"
